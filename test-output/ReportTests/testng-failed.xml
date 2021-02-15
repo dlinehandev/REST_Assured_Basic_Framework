@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ReportTests]" guice-stage="DEVELOPMENT">
+  <parameter name="env" value="dev"/>
+  <test thread-count="5" name="ReportTests(failed)">
+    <classes>
+      <class name="tests.MyntraTest">
+        <methods>
+          <include name="initTestReport"/>
+          <include name="initSuite"/>
+          <include name="clearReport"/>
+          <include name="cleanUp"/>
+          <include name="verifyMyntraProductAddToCart" invocation-numbers="2"/>
+          <include name="closeReport"/>
+          <include name="launchApp"/>
+          <include name="initDriver"/>
+        </methods>
+      </class> <!-- tests.MyntraTest -->
+    </classes>
+  </test> <!-- ReportTests(failed) -->
+</suite> <!-- Failed suite [ReportTests] -->

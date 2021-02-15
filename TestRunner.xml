@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="ZomatoAPITests" verbose="1" >
+  <test name="ZomatoAPITest">
+    <classes>
+      <class name="zomatolibrary.TestGetLocations"/>
+    </classes>
+  </test>
+</suite>
